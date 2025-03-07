@@ -249,7 +249,7 @@ function App() {
 
       {/* Footer */}
       <footer className="py-8 text-center text-gray-600 dark:text-gray-400">
-        <p>© 2024 John Doe. All rights reserved.</p>
+        <p>© 2024 Nitin Yadav. All rights reserved.</p>
       </footer>
     </div>
   );
