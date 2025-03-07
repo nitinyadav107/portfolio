@@ -145,26 +145,26 @@ function App() {
               <a href="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741373563/Screenshot_2025-03-08_001606_qmsvqk.png" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741373563/Screenshot_2025-03-08_001606_qmsvqk.png"  // ✅ Dummy image
-                  alt="Meta Frontend Developer Certificate"
+                  alt="Java Programming Fundamentals Certificate"
                   className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105 group-hover:z-10 cursor-pointer"
                 />
               </a>
-              <h3 className="text-xl font-bold mb-2">Meta Frontend Developer</h3>
-              <p className="dark:text-gray-300">Meta</p>
-              <p className="text-gray-500 dark:text-gray-400">2022</p>
+              <h3 className="text-xl font-bold mb-2">Java Programming Fundamentals </h3>
+              <p className="dark:text-gray-300">Infosys</p>
+              <p className="text-gray-500 dark:text-gray-400">2024</p>
             </div>
             {/* Google Certificate */}
             <div className="group relative bg-white/80 dark:bg-gray-800/50 p-6 rounded-xl shadow-lg backdrop-blur-sm overflow-hidden">
               <a href="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741366468/Screenshot_2025-03-07_222226_rd3ncn.png" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741366468/Screenshot_2025-03-07_222226_rd3ncn.png"  // ✅ Dummy image
-                  alt="Google Certificate"
+                  alt="Pythons Basics Certificate"
                   className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105 group-hover:z-10 cursor-pointer"
                 />
               </a>
-              <h3 className="text-xl font-bold mb-2">Google Certification</h3>
-              <p className="dark:text-gray-300">Google</p>
-              <p className="text-gray-500 dark:text-gray-400">2022</p>
+              <h3 className="text-xl font-bold mb-2">Python Basics</h3>
+              <p className="dark:text-gray-300">University of Michigan</p>
+              <p className="text-gray-500 dark:text-gray-400">2023</p>
             </div>
 
 
