@@ -314,7 +314,7 @@ function App() {
             I'm always open to discussing new projects and opportunities.
           </p>
           <a
-            href="mailto:contact@example.com"
+            href="mailto:nitinyadav4800@gmail.com"
             className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-colors"
           >
             Get in Touch
