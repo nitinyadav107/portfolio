@@ -7,7 +7,7 @@ function App() {
   const [theme, setTheme] = useState(() => {
     // Check if theme was previously set
     const savedTheme = localStorage.getItem('theme');
-    return savedTheme || 'dark';
+    return savedTheme || 'light';
   });
 
   useEffect(() => {
@@ -51,6 +51,18 @@ function App() {
           <div className="flex gap-6 justify-center mb-12 animate-fade-in">
             <a href="https://github.com/nitinyadav107" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
               <Github size={24} />
+            </a>
+            <a
+              href="https://leetcode.com/NitinYaduvanshi/"  // Replace with your actual LeetCode profile
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-orange-500 dark:hover:text-orange-400 transition-colors"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+                alt="LeetCode"
+                className="w-6 h-6"
+              />
             </a>
             <a href="https://www.linkedin.com/in/nitin-yadav-975675267/" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
               <Linkedin size={24} />
@@ -113,103 +125,6 @@ function App() {
         </div>
       </section>
 
-      {/* Certificates Section */}
-      <section className="py-20 px-4 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Certificates</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-            {/* ReactJs Certificate */}
-            <div className="group relative bg-white/80 dark:bg-gray-800/50 p-6 rounded-xl shadow-lg backdrop-blur-sm overflow-hidden">
-              <a
-                href="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741365192/Screenshot_2025-03-07_220154_fwfodu.png"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741365192/Screenshot_2025-03-07_220154_fwfodu.png"
-                  alt="ReactJs Certificate"
-                  className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105 group-hover:z-10 cursor-pointer"
-                />
-              </a>
-
-              <h3 className="text-xl font-bold mb-2">ReactJs</h3>
-              <p className="dark:text-gray-300">Infosys</p>
-              <p className="text-gray-500 dark:text-gray-400">2024</p>
-            </div>
-
-
-
-            {/* Meta Frontend Developer */}
-            <div className="group relative bg-white/80 dark:bg-gray-800/50 p-6 rounded-xl shadow-lg backdrop-blur-sm overflow-hidden">
-              <a href="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741373563/Screenshot_2025-03-08_001606_qmsvqk.png" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741373563/Screenshot_2025-03-08_001606_qmsvqk.png"  // ✅ Dummy image
-                  alt="Java Programming Fundamentals Certificate"
-                  className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105 group-hover:z-10 cursor-pointer"
-                />
-              </a>
-              <h3 className="text-xl font-bold mb-2">Java Programming Fundamentals </h3>
-              <p className="dark:text-gray-300">Infosys</p>
-              <p className="text-gray-500 dark:text-gray-400">2024</p>
-            </div>
-            {/* Google Certificate */}
-            <div className="group relative bg-white/80 dark:bg-gray-800/50 p-6 rounded-xl shadow-lg backdrop-blur-sm overflow-hidden">
-              <a href="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741366468/Screenshot_2025-03-07_222226_rd3ncn.png" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741366468/Screenshot_2025-03-07_222226_rd3ncn.png"  // ✅ Dummy image
-                  alt="Pythons Basics Certificate"
-                  className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105 group-hover:z-10 cursor-pointer"
-                />
-              </a>
-              <h3 className="text-xl font-bold mb-2">Python Basics</h3>
-              <p className="dark:text-gray-300">University of Michigan</p>
-              <p className="text-gray-500 dark:text-gray-400">2023</p>
-            </div>
-
-
-
-          </div>
-        </div>
-      </section>
-
-
-
-
-
-      {/* Projects Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ProjectCard
-              title="E-Commerce Platform"
-              description="A full-stack e-commerce solution with React, Express.js, and MongoDB"
-              image="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741374440/Screenshot_2025-03-08_003624_supvi2.png"
-              tags={['React', 'Express.js', 'MongoDB']}
-              link="https://ecommercefb.onrender.com/"
-              github="https://github.com/nitinyadav107/ecommercefb"
-            />
-            <ProjectCard
-              title="Chat Application"
-              description="Real-time chat application "
-              image="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=800"
-              tags={['React', 'Express.js', 'WebSocket']}
-              link="https://example.com"
-              github="https://github.com/nitinyadav107/ChatAppFB-main"
-            />
-            <ProjectCard
-              title="Blog Website"
-              description="A blog website built with Next.js, Tailwind CSS"
-              image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800"
-              tags={['Next.js', 'Tailwind CSS']}
-              link="https://example.com"
-              github="https://github.com/nitinyadav107/nextjsnew"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* Skills Section */}
       <section className="py-20 px-4 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto">
@@ -229,6 +144,167 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Projects Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <ProjectCard
+              title="E-Commerce Platform"
+              description="A full-stack e-commerce solution with React, Express.js, and MongoDB"
+              image="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1756046120/Screenshot_2025-08-24_200459_zkcy9k.png"
+              tags={['React', 'Express.js', 'MongoDB']}
+              link="https://ecommercefb.onrender.com/"
+              github="https://github.com/nitinyadav107/ecommercefb"
+            />
+            <ProjectCard
+              title="Chat Application"
+              description="Real-time chat application "
+              image="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1756045394/Screenshot_2025-06-12_175842_aic3kc.png"
+              tags={['React', 'Express.js', 'WebSocket']}
+              link="https://chatappfb-1.onrender.com/"
+              github="https://github.com/nitinyadav107/ChatAppFB-main-15c44fa88074f4c1bf3a4081b2730d0f93183f47"
+            />
+            <ProjectCard
+              title="Blog Website"
+              description="A blog website built with Next.js, Tailwind CSS"
+              image="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1756046039/Screenshot_2025-08-24_200332_dxxua3.png"
+              tags={['Next.js', 'Tailwind CSS']}
+              link="https://nextjsnew-9my9.vercel.app/"
+              github="https://github.com/nitinyadav107/nextjsnew"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Certificates Section */}
+      <section className="py-20 px-4 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center">Certificates</h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            {/* ReactJs Certificate */}
+            <div className="group relative bg-white/80 dark:bg-gray-800/50 p-6 rounded-xl shadow-lg backdrop-blur-sm overflow-hidden">
+              <a
+                href="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741365192/Screenshot_2025-03-07_220154_fwfodu.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741365192/Screenshot_2025-03-07_220154_fwfodu.png"
+                  alt="ReactJs Certificate"
+                  className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105 group-hover:z-10 cursor-pointer"
+                />
+              </a>
+              <h3 className="text-xl font-bold mb-2">ReactJs</h3>
+              <p className="dark:text-gray-300">Infosys</p>
+              <p className="text-gray-500 dark:text-gray-400">2024</p>
+            </div>
+
+            {/* Java Programming Fundamentals Certificate */}
+            <div className="group relative bg-white/80 dark:bg-gray-800/50 p-6 rounded-xl shadow-lg backdrop-blur-sm overflow-hidden">
+              <a
+                href="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741373563/Screenshot_2025-03-08_001606_qmsvqk.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1741373563/Screenshot_2025-03-08_001606_qmsvqk.png"
+                  alt="Java Programming Fundamentals Certificate"
+                  className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105 group-hover:z-10 cursor-pointer"
+                />
+              </a>
+              <h3 className="text-xl font-bold mb-2">Java Programming Fundamentals</h3>
+              <p className="dark:text-gray-300">Infosys</p>
+              <p className="text-gray-500 dark:text-gray-400">2024</p>
+            </div>
+
+            {/* SQL and Databases Certificate */}
+            <div className="group relative bg-white/80 dark:bg-gray-800/50 p-6 rounded-xl shadow-lg backdrop-blur-sm overflow-hidden">
+              <a
+                href="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1756044633/Screenshot_2025-08-24_193057_kem7jg.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1756044633/Screenshot_2025-08-24_193057_kem7jg.png"
+                  alt="SQL and Databases Certificate"
+                  className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105 group-hover:z-10 cursor-pointer"
+                />
+              </a>
+              <h3 className="text-xl font-bold mb-2">SQL and Databases</h3>
+              <p className="dark:text-gray-300">Infosys</p>
+              <p className="text-gray-500 dark:text-gray-400">2025</p>
+            </div>
+
+            {/* JavaScript Certificate */}
+            <div className="group relative bg-white/80 dark:bg-gray-800/50 p-6 rounded-xl shadow-lg backdrop-blur-sm overflow-hidden">
+              <a
+                href="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1756044607/Screenshot_2025-08-24_193134_ntes2m.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1756044607/Screenshot_2025-08-24_193134_ntes2m.png"
+                  alt="JavaScript Certificate"
+                  className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105 group-hover:z-10 cursor-pointer"
+                />
+              </a>
+              <h3 className="text-xl font-bold mb-2">JavaScript</h3>
+              <p className="dark:text-gray-300">Infosys</p>
+              <p className="text-gray-500 dark:text-gray-400">2025</p>
+            </div>
+
+            {/* HTML5 Certificate */}
+            <div className="group relative bg-white/80 dark:bg-gray-800/50 p-6 rounded-xl shadow-lg backdrop-blur-sm overflow-hidden">
+              <a
+                href="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1756044541/Screenshot_2025-08-24_193152_whxche.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1756044541/Screenshot_2025-08-24_193152_whxche.png"
+                  alt="HTML5 Certificate"
+                  className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105 group-hover:z-10 cursor-pointer"
+                />
+              </a>
+              <h3 className="text-xl font-bold mb-2">HTML5</h3>
+              <p className="dark:text-gray-300">Infosys</p>
+              <p className="text-gray-500 dark:text-gray-400">2025</p>
+            </div>
+
+            {/* CSS3 Certificate */}
+            <div className="group relative bg-white/80 dark:bg-gray-800/50 p-6 rounded-xl shadow-lg backdrop-blur-sm overflow-hidden">
+              <a
+                href="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1756044517/Screenshot_2025-08-24_193205_r2i3wd.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://res.cloudinary.com/dzpvuy7ja/image/upload/v1756044517/Screenshot_2025-08-24_193205_r2i3wd.png"
+                  alt="CSS3 Certificate"
+                  className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105 group-hover:z-10 cursor-pointer"
+                />
+              </a>
+              <h3 className="text-xl font-bold mb-2">CSS3</h3>
+              <p className="dark:text-gray-300">Infosys</p>
+              <p className="text-gray-500 dark:text-gray-400">2025</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
 
       {/* Contact Section */}
       <section className="py-20 px-4">
