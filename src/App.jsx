@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, ChevronDown, Sun, Moon } from 'lucide-react';
 import ProjectCard from './components/ProjectCard';
 import SkillBadge from './components/SkillBadge';
-
+//04-07-2025
 function App() {
   const [theme, setTheme] = useState(() => {
     // Check if theme was previously set
